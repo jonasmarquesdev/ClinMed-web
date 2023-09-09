@@ -6,9 +6,9 @@ export default function useFetch<T>({ url }: { url: string }) {
 
   useEffect(() => {
     fetch(`http://localhost:8080/${url}`)
-      .then((resposta = resposta.json()))
-      .then((dados) => setDados(dados))
-      .catch((erro) => setErro(erro));
+        .then(resposta => resposta.json())
+        .then(dados => setDados(dados))
+        .catch((erro => setErro(erro)));
   }, [url]);
 
   return { dados, erro };
