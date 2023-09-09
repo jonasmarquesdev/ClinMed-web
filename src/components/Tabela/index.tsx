@@ -20,7 +20,7 @@ function Tabela({ consultas }: { consultas: IConsulta[] | null }) {
             {consultas?.map((linha) => {
               return (
                 <TableRow>
-                  <TableCell component="th" scope="row">{linha.data}</TableCell>
+                  <TableCell component="th" scope="row">{new Date(linha.data).toLocaleDateString()}</TableCell>
                   <TableCell>{linha.horario}</TableCell>
                   <TableCell>{linha.profissional[0].nome}</TableCell>
                   <TableCell>{linha.profissional[0].especialidade}</TableCell>
