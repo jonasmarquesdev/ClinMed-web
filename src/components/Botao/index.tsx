@@ -9,6 +9,6 @@ const Botao = styled.button`
   margin-top: 1em;
   font-weight: 700;
   line-height: 19px;
-`
+`;
 
 export default Botao;

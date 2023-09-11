@@ -5,8 +5,8 @@ import useDadosGrafico from "./useDadosGrafico";
 import styled from "styled-components";
 
 interface Props {
-  profissionais: IProfissional[] | null,
-  consultas: IConsulta[] | null
+  profissionais: IProfissional[] | null;
+  consultas: IConsulta[] | null;
 }
 
 interface IDados {
@@ -16,8 +16,8 @@ interface IDados {
 
 const SecaoEstilizada = styled.section`
   background-color: var(--branco);
-  border-radius: 16px
-`
+  border-radius: 16px;
+`;
 
 function Grafico({ profissionais, consultas }: Props) {
   let dados: Array<IDados> = useDadosGrafico({ profissionais, consultas });
@@ -38,4 +38,4 @@ function Grafico({ profissionais, consultas }: Props) {
   );
 }
 
-export default Grafico
+export default Grafico;

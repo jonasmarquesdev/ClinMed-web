@@ -8,14 +8,18 @@ const SecaoCard = styled.section`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-`
+`;
 
-function Avaliacao({ profissionais }: { profissionais: IProfissional[] | null }) {
+function Avaliacao({
+  profissionais,
+}: {
+  profissionais: IProfissional[] | null;
+}) {
   return (
     <>
       <SecaoCard>
         {profissionais?.map((profissional) => {
-          return <Card profissional={profissional} />
+          return <Card profissional={profissional} />;
         })}
       </SecaoCard>
       <Botao>Ver mais</Botao>

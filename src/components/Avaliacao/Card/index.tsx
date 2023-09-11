@@ -7,11 +7,11 @@ const ContainerEstilizado = styled.div`
   max-width: 100%;
   background-color: #ffffff;
   padding: 1em;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   color: var(--cinza);
   margin: 1em 2em 1em;
-`
+`;
 
 const ListaEstilizada = styled.ul`
   display: flex;
@@ -19,15 +19,15 @@ const ListaEstilizada = styled.ul`
   width: 100%;
   justify-content: space-between;
   padding: 0;
-`
+`;
 
 const ItemEstilizado = styled.li`
   list-style-type: none;
-`
+`;
 
 const ItemInformacoesEstilizado = styled(ItemEstilizado)`
   flex-grow: 1;
-`
+`;
 
 const ImagemEstilizada = styled.img`
   border-radius: 100%;
@@ -36,15 +36,15 @@ const ImagemEstilizada = styled.img`
   object-fit: cover;
   border: px solid var(--azul-claro);
   margin-right: 1em;
-`
+`;
 
 const ParagrafoNomeEstilizado = styled.p`
   font-weight: 700;
-`
+`;
 const ParagrafoEstilizado = styled.p`
-  margin: .5em 0;
+  margin: 0.5em 0;
   font-size: 14px;
-`
+`;
 
 function Card({ profissional }: { profissional: IProfissional }) {
   return (
@@ -58,7 +58,9 @@ function Card({ profissional }: { profissional: IProfissional }) {
         </ItemEstilizado>
         <ItemInformacoesEstilizado>
           <ParagrafoNomeEstilizado>{profissional.nome}</ParagrafoNomeEstilizado>
-          <ParagrafoEstilizado>{profissional.especialidade}</ParagrafoEstilizado>
+          <ParagrafoEstilizado>
+            {profissional.especialidade}
+          </ParagrafoEstilizado>
         </ItemInformacoesEstilizado>
         <ItemEstilizado>
           <Rating

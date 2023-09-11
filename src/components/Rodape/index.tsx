@@ -11,7 +11,7 @@ const RodapeEstilizado = styled.footer`
   padding: 1em;
   background-color: var(--azul-escuro);
   text-align: center;
-`
+`;
 
 const ListaEstilizado = styled.ul`
   display: flex;
@@ -19,11 +19,11 @@ const ListaEstilizado = styled.ul`
   width: 10%;
   margin: 1em auto;
   gap: 0.7em;
-`
+`;
 
 const ItemEstilizado = styled.li`
   list-style-type: none;
-`
+`;
 
 function Rodape() {
   return (
@@ -50,9 +50,11 @@ function Rodape() {
           </a>
         </ItemEstilizado>
       </ListaEstilizado>
-      <p>2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+      <p>
+        2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.
+      </p>
     </RodapeEstilizado>
   );
 }
 
-export default Rodape
+export default Rodape;

@@ -34,4 +34,4 @@ function Cabecalho() {
   );
 }
 
-export default Cabecalho
+export default Cabecalho;

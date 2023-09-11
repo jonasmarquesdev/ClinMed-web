@@ -1,14 +1,25 @@
-import './App.css';
-import { Avaliacao, Botao, Cabecalho, Container, Grafico, Rodape, Subtitulo, Tabela, Titulo } from './components';
-import useDadosConsulta from './hooks/useDadosConsulta';
-import useDadosProfissional from './hooks/useDadosProfissional';
+import "./App.css";
+import {
+  Avaliacao,
+  Botao,
+  Cabecalho,
+  Container,
+  Grafico,
+  Rodape,
+  Subtitulo,
+  Tabela,
+  Titulo,
+} from "./components";
+import useDadosConsulta from "./hooks/useDadosConsulta";
+import useDadosProfissional from "./hooks/useDadosProfissional";
 
 function App() {
   const { dados: consultas, erro: consultasErro } = useDadosConsulta();
-  const { dados: profissionais, erro: profissionaisErro } = useDadosProfissional();
+  const { dados: profissionais, erro: profissionaisErro } =
+    useDadosProfissional();
 
   if (consultasErro || profissionaisErro) {
-    console.log("Ocorreu um erro na requisição")
+    console.log("Ocorreu um erro na requisição");
   }
 
   return (
