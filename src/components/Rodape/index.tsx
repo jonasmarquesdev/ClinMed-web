@@ -51,7 +51,7 @@ function Rodape() {
         </ItemEstilizado>
       </ListaEstilizado>
       <p>
-        2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.
+        2023 © Desenvolvido por jonasmarquesdev | Projeto fictício sem fins comerciais.
       </p>
     </RodapeEstilizado>
   );
